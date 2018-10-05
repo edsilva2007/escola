@@ -6,14 +6,14 @@ CONFIG -= qt
 SOURCES += main.c
 
 HEADERS += \
+    alunos/aluno.h \
+    alunos/listaAlunos.h \
+    alunos/arvoreAluno.h \
+    alunos/listaDuplaAlunos.h \
+    alunos/crudAlunos.h \
     endereco.h \
     pessoa.h \
     contato.h \
-    aluno.h \
     escola.h \
-    listaAlunos.h \
-    arvoreAluno.h \
-    listaDuplaAlunos.h \
     professor.h \
-    curso.h
-
+    curso.h \

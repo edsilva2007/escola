@@ -1,9 +1,6 @@
 #ifndef ESCOLA_H
 #define ESCOLA_H
-#include "aluno.h"
-#include "listaAlunos.h"
-#include "arvoreAluno.h"
-#include "listaDuplaAlunos.h"
+#include "alunos/crudAlunos.h"
 #include <time.h>
 typedef struct {
     Aluno *alunos;

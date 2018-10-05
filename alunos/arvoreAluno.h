@@ -9,6 +9,6 @@ typedef struct {
 
 
 
-}ArvoreAluno;
+} *ArvoreAluno;
 
 #endif // ARVOREALUNO_H
