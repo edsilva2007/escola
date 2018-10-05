@@ -6,7 +6,6 @@
 #define ALUNO_H
 #include "pessoa.h"
 
-
 /*!
   \struct Aluno
   \brief Define o tipo Aluno e os seus campus

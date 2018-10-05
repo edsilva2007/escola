@@ -1,11 +1,87 @@
 #ifndef ESCOLA_H
 #define ESCOLA_H
 #include "aluno.h"
+#include "listaAlunos.h"
+#include "arvoreAluno.h"
+#include <time.h>
 typedef struct {
     Aluno *alunos;
+    ListaAluno *lista;
+    ArvoreAluno *arvore;
     int quantidadeMaximaAlunos;
     int quantidadeAtualAlunos;
 } Escola;
+
+void rAluno (Escola *e);
+void cAluno (Escola *e);
+void uAluno (Escola *e);
+void dAluno (Escola *e);
+
+/**
+ * @brief ordenaAlunosQuick - Lucas Tezolini - Ordenar o vetor de alunos por matrícula, usando: Quicksort
+ * @param e
+ */
+void ordenaAlunosQuick(Escola *e);
+
+/**
+ * @brief ordenaAlunosSelection - Filipe Martins - Ordenar o vetor de alunos por matrícula, usando: SelectionSort
+ * @param e
+ */
+void ordenaAlunosSelection(Escola *e);
+
+/**
+ * @brief ordenaAlunosShell -  3 - Gabriel Leonel    Ordenar o vetor de alunos por matrícula, usando: Shellsort
+ * @param e
+ */
+void ordenaAlunosShell(Escola *e);
+
+/**
+ * @brief ordenaAlunosInsertion - 4 - Victor Martins   Ordenar o vetor de alunos por matrícula, usando: Insertionsort
+ * @param e
+ */
+void ordenaAlunosInsertion(Escola *e);
+
+/**
+ * @brief ordenaAlunosBuble - 5 - Gabriel Gusmão  Ordenar o vetor de alunos por matrícula, usando: Bubblesort
+ * @param e
+ */
+void ordenaAlunosBubble(Escola *e);
+
+/**
+ * @brief buscaBinaria - 6 - Pedro Bis    Implementar uma busca binária no vetor de alunos
+ * @param e - Ponteiro para Escola
+ * @param matricula - Matrícula do aluno
+ * @return posição do aluno no vetor - caso não encontre, retorna -1
+ */
+int buscaBinaria (Escola *e, int matricula);
+
+/*
+ 8    Mudar a estrutura de alunos em escola de vetor para lista duplamente encadeada
+ 10    Implementar uma busca binária na árvore binária de alunos
+ 11 - Álvaro   Fazer CRUD de Professores
+ 12 - Ruan Riguetti   Ordenar o vetor de professores por cpf, usando: Quicksort
+ 13 - Heitor   Ordenar o vetor de professores por cpf, usando: Selectionsort
+ 14   Ordenar o vetor de professores por cpf, usando: Shellsort
+ 15   Ordenar o vetor de professores por cpf, usando: Insertionsort
+ 16 - Eduardo Meneguci    Ordenar o vetor de professores por cpf, usando: Bubblesort
+ 17    Implementar uma busca binária no vetor de professores
+ 18    Mudar a estrutura de professores em escola de vetor para lista simplesmente encadeada
+ 19    Mudar a estrutura de professores em escola de vetor para lista duplamente encadeada
+ 20 - Vinícius Barbosa    Mudar a estrutura de professores em escola de vetor para arvore binária
+ 21    Implementar uma busca binária na árvore binária de professores
+ 22 - Luiz Guilherme   Fazer CRUD de Cursos
+ 23 - Hiago Braz  Ordenar o vetor de cursos por código, usando: Quicksort
+ 24  Ordenar o vetor de cursos por código, usando: Selectionsort
+ 25  Ordenar o vetor de cursos por código, usando: Shellsort
+ 26 - Italo Andradade  Ordenar o vetor de cursos por código, usando: Insertionsort
+ 27  Ordenar o vetor de cursos por código, usando: Bubblesort
+ 28    Implementar uma busca binária no vetor de cursos
+ 29    Mudar a estrutura de cursos em escola de vetor para lista simplesmente encadeada
+ 30    Mudar a estrutura de cursos em escola de vetor para lista duplamente encadeada
+ 31    Mudar a estrutura de cursos em escola de vetor para arvore binária
+ 32    Implementar uma busca binária na árvore binária de cursos
+ 33 - Fábio Pezzin   Fazer CRUD de Turmas
+*/
 
 /**
  * @brief initEscola Inicializa os dados da Escola cujo ponteiro
@@ -34,7 +110,6 @@ void printCRUDAlunoMenu(){
     printf ("\n######### 5 -> Sair:  ######################################");
     printf ("\n############################################################\n");
     printf ("\n#########\t -> ");
-
 }
 
 /**
@@ -45,7 +120,6 @@ void crudAluno(Escola *e) {
     while (1){
     printCRUDAlunoMenu();
     int opcao;
-
     fflush(stdin);
     scanf("%d", &opcao);
     switch (opcao) {
@@ -53,21 +127,80 @@ void crudAluno(Escola *e) {
             cAluno(e);
             break;
         }
-    case 5: return;
-    }
+        case 2:
+        {
+            uAluno(e);
+            break;
+        }
+        case 3:
+        {
+            rAluno(e);
+            break;
+        }
+        case 4:
+        {
+            dAluno(e);
+            break;
+        }
+
+    case 5:{
+        int i;
+        printf ("\n################## Salvando os dados ############\n");
+        while(i<100000){
+            if(i%2 == 0)
+                printf (".");
+            i++;
+
+        }
+        return;
+        }
+        }
 }
 }
 void cAluno (Escola *e){
     e->alunos[ e->quantidadeAtualAlunos] = lerAluno();
     e->quantidadeAtualAlunos++;
 }
-void rAluno (Escola *e, int matricula){
+void rAluno (Escola *e){
+    int matriculaProcurada;
+    printf ("\n Digite a matricula a ser buscada: ");
+    scanf("%d",&matriculaProcurada);
+    int i;
+    int encontrou = 0; /**< Variável de controle
+                   que verifica se um aluno foi encontrado  */
+    for(i=0; i < e->quantidadeAtualAlunos; i++){
+        if(matriculaProcurada == e->alunos[i].matricula){
+            imprimirAluno(e->alunos[i]);
+            encontrou = 1; /**< Marca como encontrado o Aluno */
+            break; /**< Sai dor for **/
+        }
+    }
+    if (!encontrou)
+        printf ("\n Aluno nao encontrado: \n");
+    system("pause");
 
 }
-void uAluno (Escola *e, int matricula){
+void uAluno (Escola *e){
+    int matriculaProcurada;
+    printf ("\n Digite a matricula a ser buscada: ");
+    scanf("%d",&matriculaProcurada);
+    int i;
+    int encontrou = 0; /**< Variável de controle
+                   que verifica se um aluno foi encontrado  */
+    for(i=0; i < e->quantidadeAtualAlunos; i++){
+        if(matriculaProcurada == e->alunos[i].matricula){
+            //imprimirAluno(e->alunos[i]);
+            e->alunos[i] = lerAluno();
+            encontrou = 1; /**< Marca como encontrado o Aluno */
+            break; /**< Sai dor for **/
+        }
+    }
+    if (!encontrou)
+        printf ("\n Aluno nao encontrado: \n");
+    system("pause");
 
 }
-void dAluno (Escola *e, int matricula){
+void dAluno (Escola *e){
 
 }
 #endif // ESCOLA_H

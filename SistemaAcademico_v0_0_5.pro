@@ -10,5 +10,7 @@ HEADERS += \
     pessoa.h \
     contato.h \
     aluno.h \
-    escola.h
+    escola.h \
+    listaAlunos.h \
+    arvoreAluno.h
 
