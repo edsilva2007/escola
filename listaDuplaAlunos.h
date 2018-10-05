@@ -9,27 +9,27 @@ typedef struct lista_dupla_Alunos {
 
 
 /**
- * @brief insereAlunoInicio Insere um aluno no inicio da lista
+ * @brief insereAlunoInicioDupla Insere um aluno no inicio da lista
  * @param l ponteiro para o ínicio da lista
  * @param a aluno a ser Inserido @see Aluno
  * @return  retorna um ponteiro para a Lista atualizada
  */
-ListaDuplaAlunos *insereAlunoInicio(ListaDuplaAlunos *l, Aluno a);
+ListaDuplaAlunos *insereAlunoInicioDupla(ListaDuplaAlunos *l, Aluno a);
 
 /**
- * @brief insereAlunoFim Insere um aluno no fim da lista
+ * @brief insereAlunoFimDupla Insere um aluno no fim da lista
  * @param l ponteiro para o ínicio da lista
  * @param a aluno a ser Inserido @see Aluno
  * @return  retorna um ponteiro para a Lista atualizada
  */
-ListaDuplaAlunos *insereAlunoFim(ListaDuplaAlunos *l, Aluno a);
+ListaDuplaAlunos *insereAlunoFimDupla(ListaDuplaAlunos *l, Aluno a);
 
 
 /**
  * @brief imprimeLista Imprime os dados de todos os alunos da lista
  * @param l
  */
-void imprimeLista(ListaDuplaAlunos *l);
+void imprimeListaDupla(ListaDuplaAlunos *l);
 
 /**
  * @brief excluiAlunoLista  - Exclui um aluno cuja matrícula é passada como parâmetro
@@ -37,7 +37,7 @@ void imprimeLista(ListaDuplaAlunos *l);
  * @param matricula
  * @return
  */
-ListaDuplaAlunos *excluiAlunoLista(ListaDuplaAlunos *l, int matricula);
+ListaDuplaAlunos *excluiAlunoListaDupla(ListaDuplaAlunos *l, int matricula);
 
 
 

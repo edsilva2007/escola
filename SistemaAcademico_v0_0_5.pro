@@ -14,5 +14,6 @@ HEADERS += \
     listaAlunos.h \
     arvoreAluno.h \
     listaDuplaAlunos.h \
-    professor.h
+    professor.h \
+    curso.h
 
