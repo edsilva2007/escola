@@ -3,10 +3,12 @@
 #include "aluno.h"
 #include "listaAlunos.h"
 #include "arvoreAluno.h"
+#include "listaDuplaAlunos.h"
 #include <time.h>
 typedef struct {
     Aluno *alunos;
     ListaAluno *lista;
+    ListaDuplaAlunos *listaDupla;
     ArvoreAluno *arvore;
     int quantidadeMaximaAlunos;
     int quantidadeAtualAlunos;
@@ -56,7 +58,6 @@ void ordenaAlunosBubble(Escola *e);
 int buscaBinaria (Escola *e, int matricula);
 
 /*
- 8    Mudar a estrutura de alunos em escola de vetor para lista duplamente encadeada
  10    Implementar uma busca binária na árvore binária de alunos
  11 - Álvaro   Fazer CRUD de Professores
  12 - Ruan Riguetti   Ordenar o vetor de professores por cpf, usando: Quicksort
