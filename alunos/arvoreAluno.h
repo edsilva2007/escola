@@ -8,7 +8,6 @@ typedef struct {
 
 
 
-
 } *ArvoreAluno;
 
 #endif // ARVOREALUNO_H

@@ -11,9 +11,14 @@ HEADERS += \
     alunos/arvoreAluno.h \
     alunos/listaDuplaAlunos.h \
     alunos/crudAlunos.h \
+    cursos/curso.h \
+    turmas/turma.h \
     endereco.h \
     pessoa.h \
     contato.h \
     escola.h \
     professor.h \
-    curso.h \
+    turma.h \
+    turmas/avaliacao.h \
+    cursos/crudCurso.h
+
