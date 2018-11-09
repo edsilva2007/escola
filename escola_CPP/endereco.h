@@ -39,7 +39,14 @@ public:
 
     }
     void imprimir(){
-
+            printf("\nRua: %s", this->rua);
+            printf("\nBairro: %s", this->bairro);
+            printf("\nCidade: %s", this->cidade);
+            printf("\nEstado: %s", this->estado);
+            printf("\nPais: %s", this->pais);
+            printf("\nNumero: %d", this->numero);
+            printf("\nComplemento: %s", this->complemento);
+            printf("\nCep: %d\n", this->cep);
     }
 
 

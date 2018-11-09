@@ -7,9 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define TAM_NOME 300 /**< Tamanho dos textos */
-
-
-/*!
+ /*!
   \struct Endereco
   \brief Define o tipo Endereco e os seus campus
 */
@@ -22,10 +20,7 @@ typedef struct {
     int numero;                     /**< Armazena o número do imóvel */
     int cep;                        /**< Armazena o número do cep */
 }Endereco;
-
-
-
-/**
+ /**
  * @brief Realiza as operações de leitura dos dados de um novo Endereço informado pelo Usuário
  * @return retorna o novo Endereço preenchido
  */
@@ -53,8 +48,7 @@ Endereco lerEndereco() {
     scanf("%d",&novo.cep);
     return novo;
 }
-
-/*!
+ /*!
  * \brief imprimirEndereco
  * \param e
  */

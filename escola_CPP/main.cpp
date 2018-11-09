@@ -7,6 +7,7 @@ int main()
 {
     Endereco e;
     e.ler();
+    e.imprimir();
     return 0;
 }
 
