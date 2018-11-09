@@ -6,5 +6,6 @@ CONFIG -= qt
 SOURCES += main.cpp
 
 HEADERS += \
-    endereco.h
+    endereco.h \
+    contato.h
 
