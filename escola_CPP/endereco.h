@@ -1,6 +1,8 @@
 #ifndef ENDERECO_H
 #define ENDERECO_H
 #define TAM_NOME 300 /**< Tamanho dos textos */
+#include <stdio.h>
+#include <stdlib.h>
 class Endereco {
     private:
     char rua[TAM_NOME];

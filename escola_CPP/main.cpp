@@ -1,11 +1,12 @@
 #include <iostream>
-#include "pessoa.h"
+#include "professor.h"
+#include "aluno.h"
 
 using namespace std;
 
 int main()
 {
-    Pessoa e;
+    Aluno e;
 
     e.ler();
 //    e.imprimir();
