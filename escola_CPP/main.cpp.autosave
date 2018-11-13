@@ -1,6 +1,6 @@
 #include <iostream>
 #include "professor.h"
-#include "aluno123.h"
+#include "aluno.h"
 
 using namespace std;
 
