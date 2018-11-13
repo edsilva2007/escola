@@ -7,5 +7,6 @@ SOURCES += main.cpp
 
 HEADERS += \
     endereco.h \
-    contato.h
+    contato.h \
+    pessoa.h
 
