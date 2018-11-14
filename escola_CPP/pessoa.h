@@ -46,8 +46,20 @@ public:
         cout << "Contato:" << endl;
         this->c.ler();
     }
-    void imprimir(){
 
+    void imprimir(){
+        cout << "Dados de Pessoa: " << endl;
+        cout << "Nome: " << this->nome << endl;
+        cout << "Sexo: " << this->sexo << endl;
+        cout << "RG: " << this->rg << endl;
+        cout << "CPF: " << this->cpf << endl;
+        cout << "Idade: " << this->idade << endl;
+        cout << "Endereco Comercial:" << endl;
+        this->comercial.imprimir();
+        cout << "Endereco Resindencial:" << endl;
+        this->residencial.imprimir();
+        cout << "Informacoes de Contato:" << endl;
+        this->c.imprimir();
     }
 };
 

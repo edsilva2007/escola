@@ -9,7 +9,7 @@ int main()
     Aluno e;
 
     e.ler();
-//    e.imprimir();
+    e.imprimir();
     return 0;
 }
 

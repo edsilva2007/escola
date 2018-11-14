@@ -1,16 +1,17 @@
 #include "aluno.h"
+#include <iostream>
 
 void Aluno::ler(){
-    printf("\n Informe os dados do Aluno: \n");
-    printf("\n Matricula: ");
-    scanf("%d",&this->matricula);
+
+    cout << " Informe os dados do Aluno:" << endl;
+    cout << "Matricula: " << endl;
+    cin >> this->matricula;
 
     Pessoa::ler();
-
 }
 void Aluno::imprimir(){
-    printf("\n Dados do Aluno: \n");
-    printf("\n Matricula: %d \n", this->matricula);
+    cout << "Dados do Aluno: \n" << endl;
+    cout << "Matricula: " << this->matricula << endl;
 
     Pessoa::imprimir();
 

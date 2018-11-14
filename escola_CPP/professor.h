@@ -6,19 +6,8 @@ class Professor : public Pessoa {
 private:
     char *curriculoLattes;
 public:
-    void ler (){
-        printf ("\n Lendo o curriculo do Professor: ; ");
-        fflush(stdin);
-        gets(this->curriculoLattes);
-        printf ("\n Chamando metodo de Pessoa; ");
-
-        Pessoa::ler();
-    }
-    void imprimir() {
-        printf ("\n Curriculo do Professor: %s \n", this->curriculoLattes);
-        Pessoa::imprimir();
-    }
-
+    void ler ();
+    void imprimir();
 };
 
 #endif // PROFESSOR_H

@@ -4,12 +4,15 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    aluno.cpp
+    aluno.cpp \
+    professor.cpp \
+    escola.cpp
 
 HEADERS += \
     endereco.h \
     contato.h \
     pessoa.h \
     professor.h \
-    aluno.h
+    aluno.h \
+    escola.h
 
