@@ -6,7 +6,8 @@ CONFIG -= qt
 SOURCES += main.cpp \
     aluno.cpp \
     professor.cpp \
-    escola.cpp
+    escola.cpp \
+    endereco.cpp
 
 HEADERS += \
     endereco.h \

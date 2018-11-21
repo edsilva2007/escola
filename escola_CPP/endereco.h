@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 class Endereco {
-    private:
+private:
     char rua[TAM_NOME];
     int cep;
     char cidade[TAM_NOME];
@@ -14,44 +14,8 @@ class Endereco {
     char complemento[TAM_NOME];
     char pais[TAM_NOME];
 public:
-    void ler(){
-        printf ("\nInforme o Enderecos: ");
-        printf("\nRua: ");
-        fflush(stdin);
-        gets(this->rua);
-        printf("\nBairro: ");
-        fflush(stdin);
-        gets(this->bairro);
-        printf("\nCidade: ");
-        fflush(stdin);
-        gets(this->cidade);
-        printf("\nEstado: ");
-        fflush(stdin);
-        gets(this->estado);
-        printf("\nPais: ");
-        fflush(stdin);
-        gets(this->pais);
-        printf("\nNumero: ");
-        scanf("%d",&this->numero);
-        printf("\nComplemento: ");
-        fflush(stdin);
-        gets(this->complemento);
-        printf("\nCep: ");
-        scanf("%d",&this->cep);
-
-    }
-    void imprimir(){
-            printf("\nRua: %s", this->rua);
-            printf("\nBairro: %s", this->bairro);
-            printf("\nCidade: %s", this->cidade);
-            printf("\nEstado: %s", this->estado);
-            printf("\nPais: %s", this->pais);
-            printf("\nNumero: %d", this->numero);
-            printf("\nComplemento: %s", this->complemento);
-            printf("\nCep: %d\n", this->cep);
-    }
-
-
+    void ler();
+    void imprimir();
 };
 
 #endif // ENDERECO_H
