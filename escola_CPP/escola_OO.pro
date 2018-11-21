@@ -7,7 +7,8 @@ SOURCES += main.cpp \
     aluno.cpp \
     professor.cpp \
     escola.cpp \
-    endereco.cpp
+    endereco.cpp \
+    contato.cpp
 
 HEADERS += \
     endereco.h \
