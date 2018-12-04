@@ -9,4 +9,6 @@ INPUT(
 ./release\crudprofessor.o
 ./release\crudcurso.o
 ./release\curso.o
+./release\avaliacao.o
+./release\turma.o
 );

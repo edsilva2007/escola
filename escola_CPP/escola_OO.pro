@@ -12,7 +12,9 @@ SOURCES += main.cpp \
     alunos/crudaluno.cpp \
     professores/crudprofessor.cpp \
     cursos/crudcurso.cpp \
-    cursos/curso.cpp
+    cursos/curso.cpp \
+    cursos/avaliacao.cpp \
+    cursos/turma.cpp
 
 HEADERS += \
     endereco.h \
@@ -31,4 +33,6 @@ HEADERS += \
     professores/arvoreProfessor.h \
     professores/listaDuplaProfessores.h \
     cursos/crudcurso.h \
-    cursos/curso.h
+    cursos/curso.h \
+    cursos/avaliacao.h \
+    cursos/turma.h

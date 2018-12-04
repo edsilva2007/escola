@@ -9,4 +9,6 @@ INPUT(
 ./debug\crudprofessor.o
 ./debug\crudcurso.o
 ./debug\curso.o
+./debug\avaliacao.o
+./debug\turma.o
 );
