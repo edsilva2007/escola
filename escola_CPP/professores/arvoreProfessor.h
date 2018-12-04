@@ -1,5 +1,5 @@
-#ifndef ARVOREALUNO_H
-#define ARVOREALUNO_H
+#ifndef ARVOREPROFESSOR_H
+#define ARVOREPROFESSOR_H
 #include "professor.h"
 
 typedef struct {

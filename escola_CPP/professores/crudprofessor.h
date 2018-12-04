@@ -17,7 +17,7 @@ private:
     int quantidadeMaximaProfessores;
 public:
     CrudProfessor();
-    void ordenarProfessorQuick(){
+    void ordenarQuick(){
 
     }
 };

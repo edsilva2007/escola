@@ -11,6 +11,8 @@ SOURCES += main.cpp \
     contato.cpp \
     alunos/crudaluno.cpp \
     professores/crudprofessor.cpp \
+    cursos/crudcurso.cpp \
+    cursos/curso.cpp
 
 HEADERS += \
     endereco.h \
@@ -28,3 +30,5 @@ HEADERS += \
     professores/listaProfessores.h \
     professores/arvoreProfessor.h \
     professores/listaDuplaProfessores.h \
+    cursos/crudcurso.h \
+    cursos/curso.h

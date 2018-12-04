@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\aluno.o
+./release\professor.o
+./release\escola.o
+./release\endereco.o
+./release\contato.o
+./release\crudaluno.o
+./release\crudprofessor.o
+./release\crudcurso.o
+./release\curso.o
+);
