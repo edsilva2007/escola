@@ -7,9 +7,12 @@
 class CrudAluno
 {
 private:
+    Aluno *alunos;
     ListaAluno listaAluno;
     ArvoreAluno arvoreAluno;
     ListaDuplaAlunos listaDuplaAlunos;
+    int quantidadeAtualAlunos;
+    int quantidadeMaximaAlunos;
 
 public:
     CrudAluno();

@@ -1,7 +1,7 @@
 #ifndef ESCOLA_H
 #define ESCOLA_H
 #include "alunos/crudaluno.h"
-#include "professor.h"
+#include "professores/crudprofessor.h"
 
 class Escola
 {

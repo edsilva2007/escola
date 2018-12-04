@@ -5,11 +5,12 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     alunos/aluno.cpp \
-    professor.cpp \
+    professores/professor.cpp \
     escola.cpp \
     endereco.cpp \
     contato.cpp \
-    alunos/crudaluno.cpp
+    alunos/crudaluno.cpp \
+    professores/crudprofessor.cpp \
 
 HEADERS += \
     endereco.h \
@@ -22,4 +23,8 @@ HEADERS += \
     alunos/listaAlunos.h \
     alunos/arvoreAluno.h \
     alunos/listaDuplaAlunos.h \
-
+    professores/crudprofessor.h \
+    professores/professor.h \
+    professores/listaProfessores.h \
+    professores/arvoreProfessor.h \
+    professores/listaDuplaProfessores.h \
