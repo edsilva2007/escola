@@ -12,8 +12,19 @@ private:
     int cargaHoraria;
     Professor *professores;
     string ementa;
+    int codigo;
 public:
     Curso();
+    int getCodigo() const;
+    void setCodigo(int value);
+    string getEmenta() const;
+    void setEmenta(const string &value);
+    Professor *getProfessores() const;
+    void setProfessores(Professor *value);
+    int getCargaHoraria() const;
+    void setCargaHoraria(int value);
+    string getNome() const;
+    void setNome(const string &value);
 };
 
 #endif // CURSO_H
