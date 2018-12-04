@@ -8,8 +8,7 @@ using namespace std;
 int main()
 {
 
-    Escola e(300,4);
-    Escola *escola2 = new Escola();
+   Escola escola2;
     return 0;
 }
 

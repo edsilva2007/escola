@@ -26,6 +26,7 @@ public:
     void inserirProfessor(Professor p);
 
     void excluirProfessor(int cpf);
+    void excluirProfessor(int cpf, int mat);
     void excluirProfessor(char nome[]);
 
     void alterarProfessor(int cpf);
