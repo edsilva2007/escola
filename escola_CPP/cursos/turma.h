@@ -22,6 +22,24 @@ private:
 
 public:
     Turma();
+    time_t getInicio() const;
+    void setInicio(const time_t &value);
+    time_t getFim() const;
+    void setFim(const time_t &value);
+    Avaliacao *getAvaliacoes() const;
+    void setAvaliacoes(Avaliacao *value);
+    int *getAlunosMatriculados() const;
+    void setAlunosMatriculados(int *value);
+    int getQuantidadeAtualAlunos() const;
+    void setQuantidadeAtualAlunos(int value);
+    int getQuantidadeMaximaAlunos() const;
+    void setQuantidadeMaximaAlunos(int value);
+    int getQuantidadeAtualAvaliacoes() const;
+    void setQuantidadeAtualAvaliacoes(int value);
+    int getQuantidadeMaximaAvaliacoes() const;
+    void setQuantidadeMaximaAvaliacoes(int value);
+    int getCpfProfessor() const;
+    void setCpfProfessor(int value);
 };
 
 #endif // TURMA_H

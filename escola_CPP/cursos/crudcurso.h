@@ -18,7 +18,9 @@ private:
      * @brief ordenaCursosInsertionsort - Ordena os cursos por nome usando o método
      *InserctionSort
      */
-    void ordenaCursosInsertionsort( );
+    void ordenaCursosInsertionsort( ){
+
+    }
 
     //Filipe Perone
     /**
@@ -27,6 +29,18 @@ private:
      * @return Retorna a posição do curso no vetor. Caso não encontre, retorna -1 (menos um)
      */
     int buscaBinaria(char *nomeCurso);
+
+    void cadastrarCurso() {
+
+    }
+    void deletarCurso (int codigo) {
+
+    }
+
+    void deletarCurso (char *nome) {
+
+    }
+
 
 public:
     CrudCurso();
