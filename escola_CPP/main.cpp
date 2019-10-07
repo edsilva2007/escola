@@ -6,7 +6,10 @@ using namespace std;
 int main()
 {
 
-   Escola escola2;
+   Aluno alunos[3];
+
+alunos[0].ler();
+
     return 0;
 }
 
