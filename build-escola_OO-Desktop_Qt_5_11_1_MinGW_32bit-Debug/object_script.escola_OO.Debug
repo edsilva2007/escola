@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\aluno.o
+./debug\professor.o
+./debug\escola.o
+./debug\endereco.o
+./debug\contato.o
+./debug\crudaluno.o
+./debug\crudprofessor.o
+./debug\crudcurso.o
+./debug\curso.o
+./debug\avaliacao.o
+./debug\turma.o
+);

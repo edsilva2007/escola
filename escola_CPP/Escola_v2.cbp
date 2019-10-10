@@ -28,9 +28,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="contato.cpp" />
+		<Unit filename="contato.h" />
+		<Unit filename="endereco.cpp" />
+		<Unit filename="endereco.h" />
+		<Unit filename="escola.cpp" />
+		<Unit filename="escola.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="pessoa.h" />
 		<Extensions>
 			<code_completion />
-			<envvars />
+			<envvars set="default" />
 			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>

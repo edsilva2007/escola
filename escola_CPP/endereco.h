@@ -3,16 +3,18 @@
 #define TAM_NOME 300 /**< Tamanho dos textos */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
+using namespace std;
 class Endereco {
 private:
-    char rua[TAM_NOME];
+    string rua;
     int cep;
-    char cidade[TAM_NOME];
-    char estado[2];
-    char bairro[TAM_NOME];
+    string cidade;
+    string estado;
+    string bairro;
     int numero;
-    char complemento[TAM_NOME];
-    char pais[TAM_NOME];
+    string complemento;
+    string pais;
 public:
     void ler();
     void imprimir();

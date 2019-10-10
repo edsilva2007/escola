@@ -3,13 +3,13 @@
 #include "endereco.h"
 #include "contato.h"
 #include <iostream>
-
+#include <string>
 using namespace std;
 class Pessoa {
 private:
     int cpf;
-    char nome[300];
-    char sexo[2];
+    string nome;
+    char sexo;
     int rg;
     int idade;
     Endereco comercial, residencial;
@@ -19,23 +19,25 @@ public:
         cout << "Digite os dados de Pessoa" << endl;
         cout << "Nome: " << endl;
         fflush(stdin);
-        gets(this->nome);
+        getline(cin , this->nome);
 
         cout << "sexo: " << endl;
         fflush(stdin);
-        gets(this->sexo);
+        cin >> this->sexo;
+
 
         cout << "RG: " << endl;
         fflush(stdin);
-        scanf("%d",&this->rg);
+        cin >> this->rg;
 
         cout << "CPF: " << endl;
         fflush(stdin);
-        scanf("%d",&this->cpf);
+        cin>> this->cpf;
 
         cout << "Idade: " << endl;
         fflush(stdin);
-        scanf("%d",&this->idade);
+        cin>> this->idade;
+
 
         cout << "Endereco Comercial" << endl;
         this->comercial.ler();
@@ -60,6 +62,14 @@ public:
         this->residencial.imprimir();
         cout << "Informacoes de Contato:" << endl;
         this->c.imprimir();
+    }
+
+    void lerNome(){
+        cout << "Informe o nome da Pessoa: " << endl;
+       getline(cin, this->nome);
+    }
+    void imprimirNome(){
+        cout << "Nome da Pessoa: " << this->nome << endl;
     }
 };
 

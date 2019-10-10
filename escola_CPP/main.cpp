@@ -6,9 +6,11 @@ using namespace std;
 int main()
 {
 
-   Aluno alunos[3];
+   Aluno aluno1;
+   Aluno aluno2;
 
-alunos[0].ler();
+//   aluno1.lerNome();
+//   aluno1.imprimirNome();
 
     return 0;
 }

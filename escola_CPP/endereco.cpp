@@ -5,25 +5,29 @@ using namespace std;
 void Endereco::ler(){
     cout << " Informe o Enderecos: " << endl;
     cout << " Rua: " << endl;
-    cin >> this->rua;
+    getline(cin,this->rua);
 
     cout << " Bairro: " << endl;
-    cin >> this->bairro;
+    getline(cin,this->bairro);
+
 
     cout << " Cidade: " << endl;
-    cin >> this->cidade;
+    getline(cin,this->cidade);
+
 
     cout << " Estado: " << endl;
-    cin >> this->estado;
+    getline(cin,this->estado);
+
 
     cout << " Pais: " << endl;
-    cin >> this->pais;
+    getline(cin,this->pais);
+
 
     cout << " Numero: " << endl;
     cin >> this->numero;
 
     cout << " Complemento: " << endl;
-    cin >> this->complemento;
+    getline(cin,this->complemento);
 
     cout << " Cep: " << endl;
     cin >> this->cep;
