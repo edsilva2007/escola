@@ -8,6 +8,9 @@ private:
 public:
     void ler();
     void imprimir();
+    Aluno(){
+
+    }
 };
 
 #endif // ALUNO_H

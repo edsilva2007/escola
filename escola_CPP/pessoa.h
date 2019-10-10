@@ -20,10 +20,9 @@ public:
         cout << "Nome: " << endl;
         fflush(stdin);
         getline(cin , this->nome);
-
-        cout << "sexo: " << endl;
         fflush(stdin);
-        cin >> this->sexo;
+      //  cout << "sexo: " << endl;
+       // cin >> this->sexo;
 
 
         cout << "RG: " << endl;
@@ -32,11 +31,11 @@ public:
 
         cout << "CPF: " << endl;
         fflush(stdin);
-        cin>> this->cpf;
+        cin >> this->cpf;
 
         cout << "Idade: " << endl;
         fflush(stdin);
-        cin>> this->idade;
+        cin >> this->idade;
 
 
         cout << "Endereco Comercial" << endl;
