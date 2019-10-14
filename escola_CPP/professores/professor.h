@@ -1,6 +1,6 @@
 #ifndef PROFESSOR_H
 #define PROFESSOR_H
-#include "pessoa.h"
+#include "../pessoa.h"
 
 class Professor : public Pessoa {
 private:

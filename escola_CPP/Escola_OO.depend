@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1570465372 source:c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\contato.cpp
+	"contato.h"
+	<iostream>
+
+1570465372 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\contato.h
+
+1570465372 source:c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\cursos\avaliacao.cpp
+	"avaliacao.h"
+
+1570465372 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\cursos\avaliacao.h
+	<ctime>
+	<string>
+
+1570465372 source:c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\cursos\turma.cpp
+	"turma.h"
+
+1570465372 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\cursos\turma.h
+	<ctime>
+	<string>
+	"avaliacao.h"
+
+1571072506 source:c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\endereco.cpp
+	"endereco.h"
+	<iostream>
+
+1571072506 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\endereco.h
+	<stdio.h>
+	<stdlib.h>
+	<string>
+
+1570465372 source:c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\alunos\aluno.cpp
+	"aluno.h"
+	<iostream>
+
+1571073017 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\alunos\aluno.h
+	"../pessoa.h"
+
+1571072506 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\pessoa.h
+	"endereco.h"
+	"contato.h"
+	<iostream>
+	<string>
+
+1570465372 source:c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\alunos\crudaluno.cpp
+	"crudaluno.h"
+	"aluno.h"
+	"listaAlunos.h"
+	"arvoreAluno.h"
+	"listaDuplaAlunos.h"
+
+1571072506 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\alunos\crudaluno.h
+	"aluno.h"
+
+1570465372 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\alunos\listaalunos.h
+	"aluno.h"
+
+1570465372 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\alunos\arvorealuno.h
+	"aluno.h"
+
+1570465372 c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\alunos\listaduplaalunos.h
+	"aluno.h"
+
+1571072506 source:c:\users\20191emsm0197\desktop\artur cofler\escola\escola_cpp\main.cpp
+	<iostream>
+	"alunos/crudaluno.h"
+

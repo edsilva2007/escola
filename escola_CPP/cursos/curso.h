@@ -1,7 +1,7 @@
 #ifndef CURSO_H
 #define CURSO_H
 
-#include "professores/professor.h"
+#include "../professores/professor.h"
 #include <string>
 
 using namespace std;
