@@ -7,8 +7,8 @@
 		<Option compiler="icc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\Escola_OO" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/Escola_OO" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="icc" />
 				<Compiler>
@@ -16,8 +16,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\Escola_OO" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/Escola_OO" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="icc" />
 				<Compiler>
@@ -28,13 +28,36 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="aluno.cpp" />
-		<Unit filename="aluno.h" />
+		<Unit filename="alunos/aluno.cpp" />
+		<Unit filename="alunos/aluno.h" />
+		<Unit filename="alunos/arvoreAluno.h" />
+		<Unit filename="alunos/crudaluno.cpp" />
+		<Unit filename="alunos/crudaluno.h" />
+		<Unit filename="alunos/listaAlunos.h" />
+		<Unit filename="alunos/listaDuplaAlunos.h" />
+		<Unit filename="contato.cpp" />
 		<Unit filename="contato.h" />
+		<Unit filename="cursos/avaliacao.cpp" />
+		<Unit filename="cursos/avaliacao.h" />
+		<Unit filename="cursos/crudcurso.cpp" />
+		<Unit filename="cursos/crudcurso.h" />
+		<Unit filename="cursos/curso.cpp" />
+		<Unit filename="cursos/curso.h" />
+		<Unit filename="cursos/turma.cpp" />
+		<Unit filename="cursos/turma.h" />
+		<Unit filename="endereco.cpp" />
 		<Unit filename="endereco.h" />
+		<Unit filename="escola.cpp" />
+		<Unit filename="escola.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="pessoa.h" />
-		<Unit filename="professor.h" />
+		<Unit filename="professores/arvoreProfessor.h" />
+		<Unit filename="professores/crudprofessor.cpp" />
+		<Unit filename="professores/crudprofessor.h" />
+		<Unit filename="professores/listaDuplaProfessores.h" />
+		<Unit filename="professores/listaProfessores.h" />
+		<Unit filename="professores/professor.cpp" />
+		<Unit filename="professores/professor.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

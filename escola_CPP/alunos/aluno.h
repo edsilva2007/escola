@@ -7,7 +7,11 @@ private:
     int matricula;
 public:
     void ler();
+    int getMatricula(){
+        return this->matricula;
+    }
     void imprimir();
+
     Aluno(){
 
     }
