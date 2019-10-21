@@ -15,6 +15,9 @@ private:
     Endereco comercial, residencial;
     Contato c;
 public:
+    string getNome(){
+        return this->nome;
+    }
     void ler(){
         cout << "Digite os dados de Pessoa" << endl;
         cout << "Nome: " << endl;

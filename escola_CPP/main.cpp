@@ -6,7 +6,7 @@ int main()
 {
     CrudAluno crud;
     crud.initCrud();
-    crud.cadastrarAluno();
+    crud.matricularAluno();
     Aluno *b;
 
     b = crud.buscarAluno(234);

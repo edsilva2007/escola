@@ -12,7 +12,7 @@
 class CrudAluno
 {
 private:
-    Aluno alunos[200] ;
+    Aluno alunos[200];
     int quantidadeAtualAlunos;
     int quantidadeMaximaAlunos;
 
@@ -24,7 +24,7 @@ public:
         this->quantidadeAtualAlunos = 0;
     }
     void cadastrarAluno(){
-        cout << "*************** Inserção de um novo Aluno *********************" << endl;
+        cout << "*************** Insercao de um novo Aluno *********************" << endl;
         //Inicia um novo Objeto do tipo Aluno e coloca na posição atual do Vetor
         this->alunos[this->quantidadeAtualAlunos]= Aluno();
 
@@ -41,15 +41,26 @@ public:
     void editarAluno (string nome);
     Aluno *buscarAluno (int matricula){
         int i;
-        Aluno *a = NULL;
 
         for(i=0;i < this->quantidadeAtualAlunos; i++ ){
             if(this->alunos[i].getMatricula() == matricula)
                 return &this->alunos[i];
+
         }
-        return a;
+        return NULL;
     }
-    Aluno buscarAluno (string nome);
+    Aluno *buscarAluno (string nome)
+    {
+        int i;
+        for(i=0;i < this->quantidadeAtualAlunos; i++ ){
+            string aux = this->alunos[i].getNome();
+            if (aux.compare(nome) == 0)
+            //if(this->alunos[i].getNome().compare(nome) == 0)
+               return &this->alunos[i];
+
+        }
+        return NULL;
+    }
 };
 
 #endif // CRUDALUNO_H

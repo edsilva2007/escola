@@ -10,6 +10,7 @@ public:
     int getMatricula(){
         return this->matricula;
     }
+
     void imprimir();
 
     Aluno(){
