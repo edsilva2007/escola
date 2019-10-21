@@ -65,3 +65,115 @@
 	<iostream>
 	"alunos/crudaluno.h"
 
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\alunos\aluno.cpp
+	"aluno.h"
+	<iostream>
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\alunos\aluno.h
+	"../pessoa.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\pessoa.h
+	"endereco.h"
+	"contato.h"
+	<iostream>
+	<string>
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\endereco.h
+	<stdio.h>
+	<stdlib.h>
+	<string>
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\contato.h
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\alunos\crudaluno.cpp
+	"crudaluno.h"
+	"aluno.h"
+	"listaAlunos.h"
+	"arvoreAluno.h"
+	"listaDuplaAlunos.h"
+
+1571676637 c:\users\1910485\documents\escola\escola_cpp\alunos\crudaluno.h
+	"aluno.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\alunos\listaalunos.h
+	"aluno.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\alunos\arvorealuno.h
+	"aluno.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\alunos\listaduplaalunos.h
+	"aluno.h"
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\contato.cpp
+	"contato.h"
+	<iostream>
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\cursos\avaliacao.cpp
+	"avaliacao.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\cursos\avaliacao.h
+	<ctime>
+	<string>
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\cursos\crudcurso.cpp
+	"crudcurso.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\cursos\crudcurso.h
+	"curso.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\cursos\curso.h
+	"../professores/professor.h"
+	<string>
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\professores\professor.h
+	"../pessoa.h"
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\cursos\curso.cpp
+	"curso.h"
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\cursos\turma.cpp
+	"turma.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\cursos\turma.h
+	<ctime>
+	<string>
+	"avaliacao.h"
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\endereco.cpp
+	"endereco.h"
+	<iostream>
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\escola.cpp
+	"escola.h"
+	<iostream>
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\escola.h
+	"alunos/crudaluno.h"
+	"professores/crudprofessor.h"
+	"cursos/crudcurso.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\professores\crudprofessor.h
+	"professor.h"
+	"listaProfessores.h"
+	"arvoreProfessor.h"
+	"listaDuplaProfessores.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\professores\listaprofessores.h
+	"professor.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\professores\arvoreprofessor.h
+	"professor.h"
+
+1571335591 c:\users\1910485\documents\escola\escola_cpp\professores\listaduplaprofessores.h
+	"professor.h"
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\main.cpp
+	<iostream>
+	"alunos/crudaluno.h"
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\professores\crudprofessor.cpp
+	"crudprofessor.h"
+
+1571335591 source:c:\users\1910485\documents\escola\escola_cpp\professores\professor.cpp
+	"professor.h"
+

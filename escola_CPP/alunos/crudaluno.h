@@ -12,7 +12,7 @@
 class CrudAluno
 {
 private:
-    Aluno *alunos;
+    Aluno alunos[200] ;
     int quantidadeAtualAlunos;
     int quantidadeMaximaAlunos;
 
@@ -20,9 +20,7 @@ public:
     CrudAluno();
     //CRUD
     void initCrud(){
-        cout << "Informe até quantos alunos deseja armazenar: ";
-        cin >> this->quantidadeMaximaAlunos;
-        this->alunos = (Aluno*) malloc(this->quantidadeMaximaAlunos * sizeof(Aluno));
+        this->quantidadeMaximaAlunos = 200;
         this->quantidadeAtualAlunos = 0;
     }
     void cadastrarAluno(){
