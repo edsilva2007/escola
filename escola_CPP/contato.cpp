@@ -9,6 +9,7 @@ void Contato::ler() {
     cin >> this->telefone;
 
     cout << "E-mail: " << endl;
+    getline(cin, this->email);
     cin >> this->email;
 }
 

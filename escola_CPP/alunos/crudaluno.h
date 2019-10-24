@@ -1,6 +1,8 @@
 #ifndef CRUDALUNO_H
 #define CRUDALUNO_H
 #include "aluno.h"
+#include <string>
+using namespace std;
 
 /*****
  *  Classe Responsável por Gerenciar Alunos
@@ -23,6 +25,37 @@ public:
         this->quantidadeMaximaAlunos = 200;
         this->quantidadeAtualAlunos = 0;
     }
+    void imprimeMenu( ){
+        cout << "****************** Gerenciamento de Alunos ******************" << endl;
+        cout << "************ 1 - Cadastrar Aluno ****************************" << endl;
+        cout << "************ 2 - Buscar Aluno por nome **********************" << endl;
+    }
+    void processaEscolha () {
+        int op;
+        this->imprimeMenu();
+        cin >> op;
+        switch(op){
+            case 1: this->cadastrarAluno(); break;
+            case 2: {
+                    string nome;
+                    cout << "Informe o nome que deseja buscar:" << endl;
+                    fflush(stdin);
+                    getline(cin,nome);
+                    Aluno *a = NULL;
+                    a = this->buscarAluno(nome);
+                    if (a == NULL )
+                        cout << "Aluno nao encontrado " << endl;
+                    else
+                        cout << "Aluno Encontrado " << endl;
+                    break;
+                    }
+            default : cout << "Opcao inexistente " << endl;
+
+
+        }
+
+    }
+
     void cadastrarAluno(){
         cout << "*************** Insercao de um novo Aluno *********************" << endl;
         //Inicia um novo Objeto do tipo Aluno e coloca na posição atual do Vetor

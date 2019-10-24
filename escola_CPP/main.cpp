@@ -6,14 +6,13 @@ int main()
 {
     CrudAluno crud;
     crud.initCrud();
-    crud.matricularAluno();
-    Aluno *b;
-
-    b = crud.buscarAluno(234);
-    if (b != NULL)
-        b->imprimirNome();
-    else
-        cout << "Aluno nao encontrado" << endl;
+    int opcao = 1;
+    while(opcao)
+    {
+        crud.processaEscolha();
+        cout << "Digite 1 para continuar no menu de Alunos " << endl;
+        cin >> opcao;
+    }
     return 0;
 }
 
