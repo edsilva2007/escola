@@ -18,6 +18,9 @@ public:
     string getNome(){
         return this->nome;
     }
+    void setNome(string n){
+        this->nome = n;
+    }
     void ler(){
         cout << "Digite os dados de Pessoa" << endl;
         cout << "Nome: " << endl;

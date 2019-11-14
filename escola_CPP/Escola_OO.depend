@@ -65,14 +65,14 @@
 	<iostream>
 	"alunos/crudaluno.h"
 
-1571335591 source:c:\users\1910485\documents\escola\escola_cpp\alunos\aluno.cpp
+1573757542 source:c:\users\1910485\documents\escola\escola_cpp\alunos\aluno.cpp
 	"aluno.h"
 	<iostream>
 
-1571941571 c:\users\1910485\documents\escola\escola_cpp\alunos\aluno.h
+1573757619 c:\users\1910485\documents\escola\escola_cpp\alunos\aluno.h
 	"../pessoa.h"
 
-1571678270 c:\users\1910485\documents\escola\escola_cpp\pessoa.h
+1573757562 c:\users\1910485\documents\escola\escola_cpp\pessoa.h
 	"endereco.h"
 	"contato.h"
 	<iostream>
@@ -94,11 +94,12 @@
 	"arvoreAluno.h"
 	"listaDuplaAlunos.h"
 
-1571942254 c:\users\1910485\documents\escola\escola_cpp\alunos\crudaluno.h
+1573759385 c:\users\1910485\documents\escola\escola_cpp\alunos\crudaluno.h
 	"aluno.h"
+	"listaAlunos.h"
 	<string>
 
-1571335591 c:\users\1910485\documents\escola\escola_cpp\alunos\listaalunos.h
+1573759602 c:\users\1910485\documents\escola\escola_cpp\alunos\listaalunos.h
 	"aluno.h"
 
 1571335591 c:\users\1910485\documents\escola\escola_cpp\alunos\arvorealuno.h

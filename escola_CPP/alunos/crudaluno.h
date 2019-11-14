@@ -1,6 +1,7 @@
 #ifndef CRUDALUNO_H
 #define CRUDALUNO_H
 #include "aluno.h"
+#include "listaAlunos.h"
 #include <string>
 using namespace std;
 
@@ -15,6 +16,7 @@ class CrudAluno
 {
 private:
     Aluno alunos[200];
+    ListaAluno *lista;
     int quantidadeAtualAlunos;
     int quantidadeMaximaAlunos;
 
@@ -22,6 +24,7 @@ public:
     CrudAluno();
     //CRUD
     void initCrud(){
+        this->lista = NULL; //Inicia a Lista Vazia.
         this->quantidadeMaximaAlunos = 200;
         this->quantidadeAtualAlunos = 0;
     }
@@ -58,13 +61,26 @@ public:
 
     void cadastrarAluno(){
         cout << "*************** Insercao de um novo Aluno *********************" << endl;
-        //Inicia um novo Objeto do tipo Aluno e coloca na posição atual do Vetor
-        this->alunos[this->quantidadeAtualAlunos]= Aluno();
+        Aluno a = Aluno();
+        //a.ler();
+        cout << "Informe o nome do aluno : " << endl;
+        string c;
+        fflush(stdin);
+        getline(cin,c);
 
-        //Ler os dados do Alunos
-        this->alunos[this->quantidadeAtualAlunos].ler();
+        cout << "Informe a matricula do aluno : " << endl;
+        int b;
+        cin >> b;
+        a.setNome(c);
+        a.setMatricula(b);
 
-        //Alterar a  quantidade atual de alunos
+        if (this->lista == NULL)
+        {
+            this->lista = new ListaAluno(a);
+        }
+        else
+            this->lista->insereAlunoFim(a);
+
         this->quantidadeAtualAlunos ++;
     }
     void matricularAluno(){
